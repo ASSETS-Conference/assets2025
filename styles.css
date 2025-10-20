@@ -973,6 +973,10 @@ ul.committee-members li {
   gap: 1rem;
 }
 
+ul.committee-members li:nth-child(2n + 3) {
+  margin-top: 2rem;
+}
+
 ul.committee-members img,
 .img-placeholder {
   width: 100%;
