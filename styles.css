@@ -2680,3 +2680,27 @@ div h4.session-heading {
     text-decoration: underline;
   }
 }
+
+.iframe-wrapper-home,
+.iframe-wrapper-attending {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.iframe-wrapper-home {
+  aspect-ratio: 4 / 5;
+}
+.iframe-wrapper-attending {
+  aspect-ratio: 16 / 9;
+}
+
+.iframe-wrapper-home iframe,
+.iframe-wrapper-attending iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
