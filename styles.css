@@ -2667,18 +2667,7 @@ div h4.session-heading {
 /* Hover and visited states on desktop */
 #tuesday-lunch-1230-1400-x2 .rsvp-link:hover {
   color: var(--accent-color);
-}
-
-/* Mobile: make the link white for red background */
-@media only screen and (max-width: 768px) {
-  #tuesday-lunch-1230-1400-x2 .rsvp-link {
-    color: white !important;
-  }
-
-  #tuesday-lunch-1230-1400-x2 .rsvp-link:hover {
-    color: white !important;
-    text-decoration: underline;
-  }
+  background-color: var(--inverted-text);
 }
 
 .iframe-wrapper-home,
