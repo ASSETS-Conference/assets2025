@@ -2660,7 +2660,8 @@ div h4.session-heading {
 #tuesday-lunch-1230-1400-x2 .rsvp-link {
   text-decoration: underline;
   font-weight: 600;
-  color: var(--accent-color2); /* matches the yellow-time style */
+  /* color: var(--accent-color2); matches the yellow-time style */
+  color: var(--inverted-text);
 }
 
 /* Hover and visited states on desktop */
