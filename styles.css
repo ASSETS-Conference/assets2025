@@ -2655,3 +2655,27 @@ div h4.session-heading {
     border-radius: 0.375rem;
   }
 }
+
+/* Fix link color for Hybrid Social Event (RSVP link) */
+#tuesday-lunch-1230-1400-x2 .rsvp-link {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--accent-color2); /* matches the yellow-time style */
+}
+
+/* Hover and visited states on desktop */
+#tuesday-lunch-1230-1400-x2 .rsvp-link:hover {
+  color: var(--accent-color);
+}
+
+/* Mobile: make the link white for red background */
+@media only screen and (max-width: 768px) {
+  #tuesday-lunch-1230-1400-x2 .rsvp-link {
+    color: white !important;
+  }
+
+  #tuesday-lunch-1230-1400-x2 .rsvp-link:hover {
+    color: white !important;
+    text-decoration: underline;
+  }
+}
