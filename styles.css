@@ -2158,7 +2158,8 @@ ul.jennys-links {
   font-size: 0.85rem;
 }
 
-.room-name {
+.room-name,
+.poster-room-name {
   font-size: 0.8rem;
   font-weight: 500;
   display: block;
@@ -2198,8 +2199,10 @@ ul.jennys-links {
   display: none;
 }
 
-.session-room-name {
+.session-room-name,
+.fs-poster-room-name {
   display: block;
+  font-family: 'Drafting', sans-serif;
   font-size: 1rem;
 }
 
