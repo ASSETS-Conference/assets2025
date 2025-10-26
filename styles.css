@@ -2157,6 +2157,17 @@ ul.jennys-links {
   display: block;
   font-size: 0.85rem;
 }
+
+.room-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: block;
+}
+
+.room-name::before {
+  content: 'Room: ';
+}
+
 .schedule-grid-td .session-name {
   display: block;
   font-style: italic;
@@ -2185,6 +2196,15 @@ ul.jennys-links {
 
 .schedule-grid .mobile-section-header {
   display: none;
+}
+
+.session-room-name {
+  display: block;
+  font-size: 1rem;
+}
+
+.session-room-name::before {
+  content: 'Room: ';
 }
 
 /* Mobile: stack to one column; keep sticky header feel */
