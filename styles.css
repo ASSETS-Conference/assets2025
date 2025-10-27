@@ -399,6 +399,7 @@ ul.main-menu li.open ul {
     display: block; /* Show menu when toggled */
     top: 0;
     padding-right: 6rem;
+    z-index: 3;
   }
 
   #menu-container.open:before {
@@ -438,6 +439,10 @@ ul.main-menu li.open ul {
 
   .submenu-toggle {
     display: none;
+  }
+
+  #menu-toggle.active {
+    z-index: 4;
   }
 
   #menu-toggle.active .hamburger {
