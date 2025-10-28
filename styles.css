@@ -1333,6 +1333,7 @@ ul.jennys-links {
   display: none;
 }
 
+#awards-list .author-list,
 .accepted-paper .author-list,
 .paper-item .author-list {
   grid-row: 3;
@@ -1998,7 +1999,8 @@ ul.jennys-links {
   padding-left: 0.25rem;
 }
 
-.paper-tag.honorable-tag::before {
+.paper-tag.honorable-tag::before,
+#awards-banner h3:after {
   content: '';
   display: inline-block;
   width: 0.9rem;
@@ -2007,6 +2009,14 @@ ul.jennys-links {
   background-repeat: no-repeat;
   background-size: contain;
   flex-shrink: 0;
+}
+
+#awards-banner h3:after {
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  position: relative;
+  top: 0.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2720,4 +2730,49 @@ div h4.session-heading {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+#awards-banner {
+  margin-bottom: 2rem;
+}
+
+#awards-banner ul#awards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1152px) {
+  #awards-banner ul#awards-list {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #awards-banner ul#awards-list {
+    grid-template-columns: 1fr;
+  }
+
+  #awards-banner ul#awards-list > li + li {
+    padding-top: 1rem;
+    border-top: 1px solid color-mix(in srgb, var(--dark-text) 40%, transparent);
+  }
+}
+
+#awards-banner ul#awards-list h4 {
+  margin-block: 0 0.5rem;
+  line-height: 1.2;
+}
+
+#awards-banner ul#awards-list p,
+#awards-banner ul#awards-list li {
+  font-size: 0.8rem;
+}
+
+#awards-banner ul#awards-list .author-list {
+  padding: 0;
 }
