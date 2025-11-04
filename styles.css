@@ -2776,8 +2776,39 @@ div h4.session-heading {
   padding: 0;
 }
 
-#awards-banner .author-list .name,
-#awards-banner .author-list li:before {
+#awards-banner .awarded-authors {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+#awards-banner .awarded-authors li {
+  display: inline;
+}
+
+#awards-banner .awarded-authors li:nth-last-child(2) .name:before {
+  content: ' and ';
+}
+
+#awards-banner .awarded-authors li:nth-last-child(2) .name:after {
+  content: '';
+}
+
+#awards-banner .awarded-authors li:last-child {
+  display: block;
+  position: relative;
+  margin-top: 0.5rem;
+}
+#awards-banner .awarded-authors li:last-child:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 6rem;
+  border-top: 1px solid color-mix(in srgb, var(--dark-text) 40%, transparent);
+}
+
+#awards-banner .awarded-authors .name,
+#awards-banner .awarded-authors li:before {
   font-size: 0.8rem !important;
 }
 
